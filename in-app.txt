@@ -19,6 +19,8 @@ improvedigital.com, 1221, RESELLER
 contextweb.com, 561961, RESELLER, 89ff185a4c4e857c
 freewheel.tv, 30269, RESELLER
 freewheel.tv, 64305, RESELLER
+spotxchange.com, 246977, DIRECT, 7842df1d2fe2db34
+spotx.tv, 246977, DIRECT, 7842df1d2fe2db34
 inmobi.com, 2ce3487332a74ffdbf734480429de58d, RESELLER, 83e75a7ae333ca9d
 contextweb.com, 562067, RESELLER, 89ff185a4c4e857c
 improvedigital.com, 1341, RESELLER
@@ -42,6 +44,7 @@ pubmatic.com, 158452, DIRECT, 5d62403b186f2ace
 spotxchange.com, 153598, RESELLER, 7842df1d2fe2db34
 spotx.tv, 153598, RESELLER, 7842df1d2fe2db34
 pubmatic.com, 158452, RESELLER, 5d62403b186f2ace
+rubiconproject.com, 17394, RESELLER, 0bfd66d529a55807
 Newborntown.com, 108961, Direct
 fout.jp, 1151, DIRECT
 spotxchange.com, 246977, RESELLER, 7842df1d2fe2db34
