@@ -1,175 +1,191 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Fish Pond Studio</title>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet" />
+        <style>
+            body {
+                font-family: "Quicksand", sans-serif;
+            }
 
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fish Pond Studio</title>
-  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Quicksand', sans-serif;
-    }
+            .container {
+                max-width: 600px;
+                margin: 20px auto;
+            }
 
-    .container {
-      max-width: 600px;
-      margin: 20px auto;
-    }
+            a {
+                color: #22a7f0;
+                text-decoration: none;
+                border-bottom: 1px solid;
+            }
 
-    a {
-      color: #22A7F0;
-      text-decoration: none;
-      border-bottom: 1px solid;
-    }
+            .games {
+                display: flex;
+                align-items: center;
+                margin: 20px 0;
+            }
 
-    .games {
-      display: flex;
-      align-items: center;
-      margin: 20px 0;
-    }
+            .game-intro {
+                padding-left: 10px;
+            }
 
-    .game-intro {
-      padding-left: 10px;
-    }
+            .game-icon {
+                flex: 0 0 auto;
+                border-radius: 9px;
+                width: 57px;
+                height: 57px;
+            }
 
-    .game-icon {
-      flex: 0 0 auto;
-      border-radius: 9px;
-      width: 57px;
-      height: 57px;
-    }
+            .footer {
+                font-size: 12px;
+                color: #ccc;
+            }
 
-    .footer {
-      font-size: 12px;
-      color: #ccc;
-    }
+            .footer a {
+                color: #ccc;
+            }
+        </style>
+    </head>
 
-    .footer a {
-      color: #ccc;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="container">
-    <p>
-      <b>Fish Pond Studio</b> is a one-man game studio based in Espoo, Finland and focused on making fun casual games.
-      Join our <a href="https://discord.gg/xgNxpsM"><b>Discord</b></a> server for upcoming games and discussion!
-    </p>
-    <div class="games">
-      <img src="mahjongmerge.png" class="game-icon">
-      <div class="game-intro">
-        <b>Mahjong Merge: Puzzle</b>
-        <br>Classic mahjong tiles with a bit of merge puzzle. Available
-        on <a href="https://fb.gg/play/mahjongmerge" target="_blank">Facebook Instant Games</a>
-      </div>
-    </div>
-    <div class="games">
-      <img src="merge3.png" class="game-icon">
-      <div class="game-intro">
-        <b>Merge 3: Number Brain Puzzle</b>
-        <br>Relax and stretch your mind in this number brain puzzle. Available
-        on <a href="https://fb.gg/play/merge-three" target="_blank">Facebook Instant Games</a> and <a
-          href="https://play.google.com/store/apps/details?id=com.fishpondstudio.merge3" target="_blank">Google Play</a>
-      </div>
-    </div>
-    <div class="games">
-      <img src="swing.png" class="game-icon">
-      <div class="game-intro">
-        <b>Swing</b>
-        <br>Physics-based Swing game: can you make it to the next level? Available
-        on <a href="https://fb.gg/play/playswing" target="_blank">Facebook Instant Games</a> and <a
-          href="https://play.google.com/store/apps/details?id=com.fishpondstudio.swing" target="_blank">Google Play</a>
-      </div>
-    </div>
-    <div class="games">
-      <img src="orbit.png" class="game-icon">
-      <div class="game-intro">
-        <b>Orbit</b>
-        <br>Orbit and avoid obstacles in weekly challenges! Available
-        on <a href="https://fb.gg/play/orbit-game" target="_blank">Facebook Instant Games</a> and
-        <a href="https://www.kaiostech.com/explore/apps/" target="_blank">KaiOS</a>
-      </div>
-    </div>
-    <div class="games">
-      <img src="penaltyshooter.png" class="game-icon">
-      <div class="game-intro">
-        <b>Penalty Shooter</b>
-        <br>Shooting penalty is all about luck: so are you the luckier than your opponent? Available
-        on <a href="http://m.me/2189129701354910?game=penalty-shooter" target="_blank">Facebook Instant Games</a>.
-      </div>
-    </div>
-    <div class="games">
-      <img src="dash1v1.png" class="game-icon">
-      <div class="game-intro">
-        <b>Dash 1v1</b>
-        <br>It's easy: tap and dash, but can you beat your friends and players all around the world? Available
-        on <a href="https://fb.gg/play/dashonevone" target="_blank">Facebook Instant Games</a>.
-      </div>
-    </div>
-    <div class="games">
-      <img src="a_t.jpg" class="game-icon">
-      <div class="game-intro">
-        <b>Airline Tycoon</b>
-        <br>Make your airline great again in this airline tycoon simulation. Available on
-        <a href="https://fb.gg/play/airtycoon" target="_blank">Facebook Instant Games</a>.
-      </div>
-    </div>
-    <div class="games">
-      <img src="air-balloon.png" class="game-icon">
-      <div class="game-intro">
-        <b>Air Balloon</b>
-        <br>A simple physics-based arcade game: protect your airballoon from bricks. Available on
-        <a href="https://fb.gg/play/airballoon" target="_blank">Facebook Instant Games</a>.
-      </div>
-    </div>
-    <div class="games">
-      <img src="dont-touch-yellow.png" class="game-icon">
-      <div class="game-intro">
-        <b>Don't Touch Yellow</b>
-        <br>It's simple: don't touch yellow. But can you resist it? Available on
-        <a href="https://fb.gg/play/dont-touch-yellow" target="_blank">Facebook Instant Games</a>.
-      </div>
-    </div>
-    <div class="games">
-      <img src="merge-3.png" class="game-icon">
-      <div class="game-intro">
-        <b>Merge 3 with Friends</b>
-        <br>Challenge your friends with this classic merge 3 game. Available on
-        <a href="https://fb.gg/play/mergethree" target="_blank">Facebook Instant Games</a>.
-      </div>
-    </div>
-    <div class="games">
-      <img src="rocket_run.png" class="game-icon">
-      <div class="game-intro">
-        <b>Rocket Run</b>
-        <br>What's better than an endless runner? An endless runner
-        with a rocket! Available on
-        <a href="https://fb.gg/play/rocket-run" target="_blank">Facebook Instant Games</a>.
-      </div>
-    </div>
-    <div class="games">
-      <img src="box_flip.png" class="game-icon">
-      <div class="game-intro">
-        <b>Box Flip</b>
-        <br>Bottle flip is too hard, that's why we've made Box Flip. Available on
-        <a href="https://fb.gg/play/boxflip" target="_blank">Facebook Instant Games</a>.
-      </div>
-    </div>
-    <div class="games">
-      <img src="pinball_breakout.png" class="game-icon">
-      <div class="game-intro">
-        <b>Pinball Breakout</b>
-        <br>A unique mix of Pinball and Breakout. Available on
-        <a href="https://play.google.com/store/apps/details?id=com.ruoyusun.pinball_breakout" target="_blank">Google
-          Play</a> and
-        <a href="https://fb.gg/play/pinballbreakout" target="_blank">Facebook Instant Games</a>.
-      </div>
-    </div>
-    <p class="footer">
-      <a href="privacy.txt">Privacy Policy</a>&nbsp;&nbsp;·&nbsp;&nbsp;Email: hi @ fishpondstudio . com
-    </p>
-  </div>
-</body>
-
+    <body>
+        <div class="container">
+            <p>
+                <b>Fish Pond Studio</b> is a one-man game studio based in Espoo, Finland and focused on making fun
+                casual games. Join our <a href="https://discord.gg/xgNxpsM"><b>Discord</b></a> server for upcoming games
+                and discussion!
+            </p>
+            <div class="games">
+                <img src="merge-s.png" class="game-icon" />
+                <div class="game-intro">
+                    <b>Merge Solitaire: Card Puzzle</b>
+                    <br />Enjoy solitaire game and merge puzzle? What about a bit of both? Available on
+                    <a href="https://fb.gg/play/merge-card" target="_blank">Facebook Instant Games</a>
+                </div>
+            </div>
+            <div class="games">
+                <img src="mahjongmerge.png" class="game-icon" />
+                <div class="game-intro">
+                    <b>Mahjong Merge: Puzzle</b>
+                    <br />Classic mahjong tiles with a bit of merge puzzle. Available on
+                    <a href="https://fb.gg/play/mahjongmerge" target="_blank">Facebook Instant Games</a> and
+                    <a href="https://www.crazygames.com/game/merge-mahjong" target="_blank">Crazy Games</a>
+                </div>
+            </div>
+            <div class="games">
+                <img src="merge3.png" class="game-icon" />
+                <div class="game-intro">
+                    <b>Merge 3: Number Brain Puzzle</b>
+                    <br />Relax and stretch your mind in this number brain puzzle. Available on
+                    <a href="https://fb.gg/play/merge-three" target="_blank">Facebook Instant Games</a> and
+                    <a href="https://play.google.com/store/apps/details?id=com.fishpondstudio.merge3" target="_blank"
+                        >Google Play</a
+                    >
+                </div>
+            </div>
+            <div class="games">
+                <img src="swing.png" class="game-icon" />
+                <div class="game-intro">
+                    <b>Swing</b>
+                    <br />Physics-based Swing game: can you make it to the next level? Available on
+                    <a href="https://fb.gg/play/playswing" target="_blank">Facebook Instant Games</a> and
+                    <a href="https://play.google.com/store/apps/details?id=com.fishpondstudio.swing" target="_blank"
+                        >Google Play</a
+                    >
+                </div>
+            </div>
+            <div class="games">
+                <img src="orbit.png" class="game-icon" />
+                <div class="game-intro">
+                    <b>Orbit</b>
+                    <br />Orbit and avoid obstacles in weekly challenges! Available on
+                    <a href="https://fb.gg/play/orbit-game" target="_blank">Facebook Instant Games</a> and
+                    <a href="https://www.kaiostech.com/store/apps/?bundle_id=kaios.app.orbit" target="_blank">KaiOS</a>
+                </div>
+            </div>
+            <div class="games">
+                <img src="penaltyshooter.png" class="game-icon" />
+                <div class="game-intro">
+                    <b>Penalty Shooter</b>
+                    <br />Shooting penalty is all about luck: so are you the luckier than your opponent? Available on
+                    <a href="http://m.me/2189129701354910?game=penalty-shooter" target="_blank"
+                        >Facebook Instant Games</a
+                    >.
+                </div>
+            </div>
+            <div class="games">
+                <img src="dash1v1.png" class="game-icon" />
+                <div class="game-intro">
+                    <b>Dash 1v1</b>
+                    <br />It's easy: tap and dash, but can you beat your friends and players all around the world?
+                    Available on <a href="https://fb.gg/play/dashonevone" target="_blank">Facebook Instant Games</a>.
+                </div>
+            </div>
+            <div class="games">
+                <img src="a_t.jpg" class="game-icon" />
+                <div class="game-intro">
+                    <b>Airline Tycoon</b>
+                    <br />Make your airline great again in this airline tycoon simulation. Available on
+                    <a href="https://fb.gg/play/airtycoon" target="_blank">Facebook Instant Games</a>.
+                </div>
+            </div>
+            <div class="games">
+                <img src="air-balloon.png" class="game-icon" />
+                <div class="game-intro">
+                    <b>Air Balloon</b>
+                    <br />A simple physics-based arcade game: protect your airballoon from bricks. Available on
+                    <a href="https://fb.gg/play/airballoon" target="_blank">Facebook Instant Games</a>.
+                </div>
+            </div>
+            <div class="games">
+                <img src="dont-touch-yellow.png" class="game-icon" />
+                <div class="game-intro">
+                    <b>Don't Touch Yellow</b>
+                    <br />It's simple: don't touch yellow. But can you resist it? Available on
+                    <a href="https://fb.gg/play/dont-touch-yellow" target="_blank">Facebook Instant Games</a>.
+                </div>
+            </div>
+            <div class="games">
+                <img src="merge-3.png" class="game-icon" />
+                <div class="game-intro">
+                    <b>Merge 3 with Friends</b>
+                    <br />Challenge your friends with this classic merge 3 game. Available on
+                    <a href="https://fb.gg/play/mergethree" target="_blank">Facebook Instant Games</a>.
+                </div>
+            </div>
+            <div class="games">
+                <img src="rocket_run.png" class="game-icon" />
+                <div class="game-intro">
+                    <b>Rocket Run</b>
+                    <br />What's better than an endless runner? An endless runner with a rocket! Available on
+                    <a href="https://fb.gg/play/rocket-run" target="_blank">Facebook Instant Games</a>.
+                </div>
+            </div>
+            <div class="games">
+                <img src="box_flip.png" class="game-icon" />
+                <div class="game-intro">
+                    <b>Box Flip</b>
+                    <br />Bottle flip is too hard, that's why we've made Box Flip. Available on
+                    <a href="https://fb.gg/play/boxflip" target="_blank">Facebook Instant Games</a>.
+                </div>
+            </div>
+            <div class="games">
+                <img src="pinball_breakout.png" class="game-icon" />
+                <div class="game-intro">
+                    <b>Pinball Breakout</b>
+                    <br />A unique mix of Pinball and Breakout. Available on
+                    <a
+                        href="https://play.google.com/store/apps/details?id=com.ruoyusun.pinball_breakout"
+                        target="_blank"
+                        >Google Play</a
+                    >
+                    and <a href="https://fb.gg/play/pinballbreakout" target="_blank">Facebook Instant Games</a>.
+                </div>
+            </div>
+            <p class="footer">
+                <a href="privacy.txt">Privacy Policy</a>&nbsp;&nbsp;·&nbsp;&nbsp;Email: hi @ fishpondstudio . com
+            </p>
+        </div>
+    </body>
 </html>
