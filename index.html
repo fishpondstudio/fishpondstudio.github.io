@@ -88,9 +88,12 @@
             </div>
             <div>
                 <b>Fish Pond Studio</b> is a one-man game studio focused on making idle games with deep and complex
-                simulation. Join our <a href="https://discord.gg/xgNxpsM" target="_blank"><b>Discord</b></a> server for
-                upcoming games and discussion! You can also read <a href="https://ruoyusun.com/" target="_blank">my
-                    personal blog</a> if you are into the behind-the-scene tech stuff.
+                simulation. Join our <a href="https://discord.gg/xgNxpsM" target="_blank"><b>Discord (<span
+                            id="discord-online-count">0</span> online right now)</b></a> server for upcoming
+                games and
+                discussion!
+                You can also read <a href="https://ruoyusun.com/" target="_blank">my personal blog</a> if you are into
+                the behind-the-scene tech stuff.
             </div>
         </div>
         <div class="games">
@@ -178,6 +181,11 @@
             <a href="privacy.txt">Privacy Policy</a>&nbsp;&nbsp;·&nbsp;&nbsp;Email: hi @ fishpondstudio . com
         </p>
     </div>
+    <script>
+        fetch("https://discord.com/api/guilds/631551126377857044/widget.json").then(res => res.json()).then(data => {
+            document.getElementById("discord-online-count").innerText = data.presence_count;
+        });
+    </script>
 </body>
 
 </html>
