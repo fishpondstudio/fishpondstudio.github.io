@@ -1,0 +1,3 @@
+Support Email: hi @ fishpondstudio . com
+Remove the space between @ and .
+Please provide as much details as possible: reproduction, screenshot, platform, in-game name, etc
