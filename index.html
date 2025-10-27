@@ -1,192 +1,264 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Fish Pond Studio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                font-family: "Cabin", sans-serif;
+                font-optical-sizing: auto;
+                font-style: normal;
+                line-height: 1.25;
+                font-weight: 400;
+                font-size: 16px;
+                color: #2d3436;
+            }
 
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Fish Pond Studio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet">
-    <style>
-        body {
-            font-family: "Cabin", sans-serif;
-            font-optical-sizing: auto;
-            font-style: normal;
-            line-height: 1.25;
-            font-weight: 400;
-            font-size: 16px;
-            color: #2d3436;
-        }
+            b,
+            strong {
+                font-weight: 700;
+            }
 
-        b,
-        strong {
-            font-weight: 700;
-        }
+            .logo {
+                width: 136px;
+                margin: 0 20px 0 0;
+                height: auto;
+                display: block;
+                image-rendering: pixelated;
+            }
 
-        .logo {
-            width: 136px;
-            margin: 0 20px 0 0;
-            height: auto;
-            display: block;
-            image-rendering: pixelated;
-        }
+            .container {
+                max-width: 600px;
+                min-width: 300px;
+                margin: 20px auto;
+                padding: 0 20px;
+                text-align: justify;
+            }
 
-        .container {
-            max-width: 600px;
-            min-width: 300px;
-            margin: 20px auto;
-            padding: 0 20px;
-            text-align: justify;
-        }
+            a {
+                color: #6c5ce7;
+                text-decoration: none;
+                font-weight: 500;
+            }
 
-        a {
-            color: #6c5ce7;
-            text-decoration: none;
-            font-weight: 500;
-        }
+            a:hover {
+                text-decoration: underline;
+                text-underline-offset: 2px;
+                text-decoration-thickness: 2px;
+            }
 
-        a:hover {
-            text-decoration: underline;
-            text-underline-offset: 2px;
-            text-decoration-thickness: 2px;
-        }
+            .games {
+                display: flex;
+                align-items: center;
+                margin: 20px 0;
+            }
 
-        .games {
-            display: flex;
-            align-items: center;
-            margin: 20px 0;
-        }
+            .game-intro {
+                padding-left: 10px;
+            }
 
-        .game-intro {
-            padding-left: 10px;
-        }
+            .game-icon {
+                flex: 0 0 auto;
+                border-radius: 9px;
+                width: 57px;
+                height: 57px;
+            }
 
-        .game-icon {
-            flex: 0 0 auto;
-            border-radius: 9px;
-            width: 57px;
-            height: 57px;
-        }
+            .footer {
+                font-size: 12px;
+                color: rgba(0, 0, 0, 0.4);
+            }
 
-        .footer {
-            font-size: 12px;
-            color: rgba(0, 0, 0, 0.4);
-        }
+            .footer a {
+                color: rgba(0, 0, 0, 0.4);
+            }
+        </style>
+    </head>
 
-        .footer a {
-            color: rgba(0, 0, 0, 0.4);
-        }
-    </style>
-</head>
-
-<body>
-    <div class="container">
-        <div style="display: flex">
-            <div>
-                <img src="logo_pixel.png" class="logo" alt="Fish Pond Studio" />
+    <body>
+        <div class="container">
+            <div style="display: flex">
+                <div>
+                    <img
+                        src="logo_pixel.png"
+                        class="logo"
+                        alt="Fish Pond Studio"
+                    />
+                </div>
+                <div>
+                    <b>Fish Pond Studio</b> is a one-man game studio focused on
+                    making incremental/idle games with deep and complex
+                    simulation. Join our
+                    <a href="https://discord.gg/xgNxpsM" target="_blank"
+                        ><b>Discord</b> (<span id="discord-online-count"
+                            >0</span
+                        >
+                        online right now)</a
+                    >
+                    server for upcoming games and discussion! You can also read
+                    <a href="https://ruoyusun.com/" target="_blank"
+                        >my personal blog</a
+                    >
+                    if you are into the behind-the-scene tech stuff.
+                </div>
             </div>
-            <div>
-                <b>Fish Pond Studio</b> is a one-man game studio focused on making idle games with deep and complex
-                simulation. Join our <a href="https://discord.gg/xgNxpsM" target="_blank"><b>Discord (<span
-                            id="discord-online-count">0</span> online right now)</b></a> server for upcoming
-                games and
-                discussion!
-                You can also read <a href="https://ruoyusun.com/" target="_blank">my personal blog</a> if you are into
-                the behind-the-scene tech stuff.
+            <div class="games">
+                <img src="cividle.png" class="game-icon" />
+                <div class="game-intro">
+                    <b>CivIdle</b>
+                    <br />CivIdle is an idle/incremental game that allows you to
+                    lead your own civilization through thousands of years from
+                    ancient times to modern era. Visit
+                    <a href="https://cividle.com/" target="_blank"
+                        >CivIdle.com</a
+                    >
+                    for more information.
+                </div>
             </div>
+            <div class="games">
+                <img src="industryidle.png" class="game-icon" />
+                <div class="game-intro">
+                    <b>Industry Idle</b>
+                    <br />An idle game that combines factory building, resource
+                    management and market trading. Visit
+                    <a href="https://industryidle.com/" target="_blank"
+                        >IndustryIdle.com</a
+                    >
+                    for more information.
+                </div>
+            </div>
+            <div><b>Older Games</b></div>
+            <div class="games">
+                <img src="ipb.png" class="game-icon" />
+                <div class="game-intro">
+                    <b>Idle Pinball Breakout</b>
+                    <br />A unique mix of idle earning + Pinball Phyiscs + Brick
+                    Breaker. Available on
+                    <a
+                        href="https://apps.apple.com/us/app/idle-pinball-breakout/id1543064728"
+                        target="_blank"
+                        >App Store</a
+                    >,
+                    <a
+                        href="https://play.google.com/store/apps/details?id=com.fishpondstudio.ipb"
+                        target="_blank"
+                        >Google Play</a
+                    >
+                    and
+                    <a
+                        href="https://www.crazygames.com/game/idle-pinball-breakout"
+                        target="_blank"
+                        >CrazyGames</a
+                    >
+                </div>
+            </div>
+            <div class="games">
+                <img src="iat.png" class="game-icon" />
+                <div class="game-intro">
+                    <b>Idle Airline Tycoon</b>
+                    <br />Manage your airline and expand your routes to all
+                    continents. Available on
+                    <a
+                        href="https://www.crazygames.com/game/idle-airline-tycoon"
+                        target="_blank"
+                        >Crazy Games</a
+                    >,
+                    <a
+                        href="https://apps.apple.com/us/app/idle-airline-tycoon/id1536577829"
+                        target="_blank"
+                        >App Store</a
+                    >
+                    and
+                    <a
+                        href="https://play.google.com/store/apps/details?id=com.fishpondstudio.iat"
+                        target="_blank"
+                        >Google Play</a
+                    >
+                </div>
+            </div>
+            <div class="games">
+                <img src="wordduel.png" class="game-icon" />
+                <div class="game-intro">
+                    <b>Word Duel: 1v1 Multiplayer</b>
+                    <br />PvP word spelling competition. Available on
+                    <a
+                        href="https://www.crazygames.com/game/word-duel"
+                        target="_blank"
+                        >Crazy Games</a
+                    >,
+                    <a
+                        href="https://apps.apple.com/us/app/word-duel-pvp-words-battle/id1538227996"
+                        target="_blank"
+                        >App Store</a
+                    >
+                    and
+                    <a
+                        href="https://play.google.com/store/apps/details?id=com.fishpondstudio.wordduel"
+                        target="_blank"
+                        >Google Play</a
+                    >
+                </div>
+            </div>
+            <div class="games">
+                <img src="swing.png" class="game-icon" />
+                <div class="game-intro">
+                    <b>Swing</b>
+                    <br />Physics-based Swing game: can you make it to the next
+                    level? Available on
+                    <a
+                        href="https://www.kaiostech.com/store/apps/?bundle_id=kaios.app.swing"
+                        target="_blank"
+                        >KaiOS</a
+                    >.
+                </div>
+            </div>
+            <div class="games">
+                <img src="orbit.png" class="game-icon" />
+                <div class="game-intro">
+                    <b>Orbit</b>
+                    <br />Orbit and avoid obstacles in weekly challenges!
+                    Available on
+                    <a
+                        href="https://www.kaiostech.com/store/apps/?bundle_id=kaios.app.orbit"
+                        target="_blank"
+                        >KaiOS</a
+                    >
+                </div>
+            </div>
+            <div class="games">
+                <img src="dash1v1.png" class="game-icon" />
+                <div class="game-intro">
+                    <b>Dash 1v1</b>
+                    <br />It's easy: tap and dash, but can you beat your friends
+                    and players all around the world? Available on
+                    <a
+                        href="https://www.kaiostech.com/store/apps/?bundle_id=kaios.app.dash1v1"
+                        target="_blank"
+                        >KaiOS</a
+                    >
+                </div>
+            </div>
+            <p class="footer">
+                <a href="privacy.txt">Privacy Policy</a
+                >&nbsp;&nbsp;·&nbsp;&nbsp;Email: hi @ fishpondstudio . com
+            </p>
         </div>
-        <div class="games">
-            <img src="cividle.png" class="game-icon" />
-            <div class="game-intro">
-                <b>CivIdle</b>
-                <br />CivIdle is an idle/incremental game that allows you to lead your own civilization through
-                thousands of years from ancient times to modern era. Visit <a href="https://cividle.com/"
-                    target="_blank">CivIdle.com</a> for more information.
-            </div>
-        </div>
-        <div class="games">
-            <img src="industryidle.png" class="game-icon" />
-            <div class="game-intro">
-                <b>Industry Idle</b>
-                <br />An idle game that combines factory building, resource management and market trading. Visit
-                <a href="https://industryidle.com/" target="_blank">IndustryIdle.com</a> for more information.
-            </div>
-        </div>
-        <div class="games">
-            <img src="ipb.png" class="game-icon" />
-            <div class="game-intro">
-                <b>Idle Pinball Breakout</b>
-                <br />A unique mix of idle earning + Pinball Phyiscs + Brick Breaker. Available on
-                <a href="https://apps.apple.com/us/app/idle-pinball-breakout/id1543064728" target="_blank">App
-                    Store</a>,
-                <a href="https://play.google.com/store/apps/details?id=com.fishpondstudio.ipb" target="_blank">Google
-                    Play</a>
-                and <a href="https://www.crazygames.com/game/idle-pinball-breakout" target="_blank">CrazyGames</a>
-            </div>
-        </div>
-        <div class="games">
-            <img src="iat.png" class="game-icon" />
-            <div class="game-intro">
-                <b>Idle Airline Tycoon</b>
-                <br />Manage your airline and expand your routes to all continents. Available on
-                <a href="https://www.crazygames.com/game/idle-airline-tycoon" target="_blank">Crazy Games</a>,
-                <a href="https://apps.apple.com/us/app/idle-airline-tycoon/id1536577829" target="_blank">App Store</a>
-                and
-                <a href="https://play.google.com/store/apps/details?id=com.fishpondstudio.iat" target="_blank">Google
-                    Play</a>
-            </div>
-        </div>
-        <div class="games">
-            <img src="wordduel.png" class="game-icon" />
-            <div class="game-intro">
-                <b>Word Duel: 1v1 Multiplayer</b>
-                <br />PvP word spelling competition. Available on
-                <a href="https://www.crazygames.com/game/word-duel" target="_blank">Crazy Games</a> and
-                <a href="https://play.google.com/store/apps/details?id=com.fishpondstudio.wordduel"
-                    target="_blank">Google Play</a>
-            </div>
-        </div>
-        <div class="games">
-            <img src="swing.png" class="game-icon" />
-            <div class="game-intro">
-                <b>Swing</b>
-                <br />Physics-based Swing game: can you make it to the next level? Available on
-                <a href="https://play.google.com/store/apps/details?id=com.fishpondstudio.swing" target="_blank">Google
-                    Play</a>
-                and
-                <a href="https://www.kaiostech.com/store/apps/?bundle_id=kaios.app.swing" target="_blank">KaiOS</a>.
-                A new multiplayer version is now available on
-                <a href="https://www.crazygames.com/game/stickman-swing-1v1-multiplayer" target="_blank">CrazyGames</a>
-            </div>
-        </div>
-        <div class="games">
-            <img src="orbit.png" class="game-icon" />
-            <div class="game-intro">
-                <b>Orbit</b>
-                <br />Orbit and avoid obstacles in weekly challenges! Available on
-                <a href="https://www.kaiostech.com/store/apps/?bundle_id=kaios.app.orbit" target="_blank">KaiOS</a>
-            </div>
-        </div>
-        <div class="games">
-            <img src="dash1v1.png" class="game-icon" />
-            <div class="game-intro">
-                <b>Dash 1v1</b>
-                <br />It's easy: tap and dash, but can you beat your friends and players all around the world?
-                Available on
-                <a href="https://www.kaiostech.com/store/apps/?bundle_id=kaios.app.dash1v1" target="_blank">KaiOS</a>
-            </div>
-        </div>
-        <p class="footer">
-            <a href="privacy.txt">Privacy Policy</a>&nbsp;&nbsp;·&nbsp;&nbsp;Email: hi @ fishpondstudio . com
-        </p>
-    </div>
-    <script>
-        fetch("https://discord.com/api/guilds/631551126377857044/widget.json").then(res => res.json()).then(data => {
-            document.getElementById("discord-online-count").innerText = data.presence_count;
-        });
-    </script>
-</body>
-
+        <script>
+            fetch(
+                "https://discord.com/api/guilds/631551126377857044/widget.json",
+            )
+                .then((res) => res.json())
+                .then((data) => {
+                    document.getElementById("discord-online-count").innerText =
+                        data.presence_count;
+                });
+        </script>
+    </body>
 </html>
