@@ -20,21 +20,34 @@
             font-style: normal;
             line-height: 1.25;
             font-weight: 400;
-            font-size: 14px;
-        }
-
-        b,
-        strong {
-            font-weight: normal;
-            color: rgba(255, 255, 255, 0.9);
+            font-size: 15px;
         }
 
         .logo {
-            width: calc(45px * 3);
+            width: calc(48px * 3);
             margin: 0 20px 0 0;
             height: auto;
             display: block;
             image-rendering: pixelated;
+        }
+
+        b {
+           color: rgba(255, 255, 255, 0.9);
+        }
+
+        h1, h2 {
+           color: rgba(255, 255, 255, 0.9);
+           text-transform: uppercase;
+        }
+
+        h1 {
+           margin: 10px 0;
+           font-size: 20px;
+        }
+
+        h2 {
+           margin: 0;
+           font-size: 18px;
         }
 
         .container {
@@ -59,23 +72,23 @@
         .games {
             display: flex;
             align-items: center;
-            margin: 20px 0;
+            margin: 30px 0;
         }
 
         .game-intro {
-            padding-left: 10px;
+            padding-left: 15px;
         }
 
         .game-icon {
             flex: 0 0 auto;
-            border-radius: 9px;
-            width: 57px;
-            height: 57px;
+            border-radius: 20%;
+            width: 80px;
         }
 
         .footer, .footer a {
             font-size: 12px;
             color: #666666;
+            text-align: center;
         }
     </style>
 </head>
@@ -86,8 +99,8 @@
             <div>
                 <img src="logo.png" class="logo" alt="Fish Pond Studio" />
             </div>
-            <div>
-                <b>Fish Pond Studio</b> is a one-man game studio crafting incremental games with minimalist visuals and
+            <div style="font-size: 18px; text-transform: uppercase;">
+                <b>Fish Pond Studio</b> is a one-man game studio crafting incremental strategy games with minimalist visuals and
                 maximal depth.
             </div>
         </div>
@@ -100,10 +113,18 @@
             if you are into the behind-the-scene tech stuff.
         </div>
         <div class="games">
+            <img src="restitutor.png" class="game-icon" />
+            <div class="game-intro">
+                <h2>Restitutor: Empire Restored</h2>
+                Restitutor is a historical incremental grand strategy game focused on statecraft, diplomacy, and calculated warfare without micromanagement.
+                Available on <a href="https://store.steampowered.com/app/4431750/Restitutor_Empire_Restored/" target="_blank">Steam</a>. Download <a href="RestitutorPressKit.zip">Press Kit</a>.
+            </div>
+        </div>
+        <div class="games">
             <img src="cividle.png" class="game-icon" />
             <div class="game-intro">
-                <b>CivIdle</b>
-                <br />CivIdle is an idle/incremental game that allows you to
+                <h2>CivIdle</h2>
+                CivIdle is an idle/incremental game that allows you to
                 lead your own civilization through thousands of years from
                 ancient times to modern era. Visit
                 <a href="https://cividle.com/" target="_blank">CivIdle.com</a>
@@ -113,19 +134,19 @@
         <div class="games">
             <img src="industryidle.png" class="game-icon" />
             <div class="game-intro">
-                <b>Industry Idle</b>
-                <br />An idle game that combines factory building, resource
+                <h2>Industry Idle</h2>
+                An idle game that combines factory building, resource
                 management and market trading. Visit
                 <a href="https://industryidle.com/" target="_blank">IndustryIdle.com</a>
                 for more information.
             </div>
         </div>
-        <div><b>Older Games</b></div>
+        <h1>Older Games</h1>
         <div class="games">
             <img src="ipb.png" class="game-icon" />
             <div class="game-intro">
-                <b>Idle Pinball Breakout</b>
-                <br />A unique mix of idle earning + Pinball Phyiscs + Brick
+                <h2>Idle Pinball Breakout</h2>
+                A unique mix of idle earning + Pinball Phyiscs + Brick
                 Breaker. Available on
                 <a href="https://apps.apple.com/us/app/idle-pinball-breakout/id1543064728" target="_blank">App
                     Store</a>,
@@ -138,8 +159,8 @@
         <div class="games">
             <img src="iat.png" class="game-icon" />
             <div class="game-intro">
-                <b>Idle Airline Tycoon</b>
-                <br />Manage your airline and expand your routes to all
+                <h2>Idle Airline Tycoon</h2>
+                Manage your airline and expand your routes to all
                 continents. Available on
                 <a href="https://www.crazygames.com/game/idle-airline-tycoon" target="_blank">Crazy Games</a>,
                 <a href="https://apps.apple.com/us/app/idle-airline-tycoon/id1536577829" target="_blank">App Store</a>
@@ -151,8 +172,8 @@
         <div class="games">
             <img src="wordduel.png" class="game-icon" />
             <div class="game-intro">
-                <b>Word Duel: 1v1 Multiplayer</b>
-                <br />PvP word spelling competition. Available on
+                <h2>Word Duel: 1v1 Multiplayer</h2>
+                PvP word spelling competition. Available on
                 <a href="https://www.crazygames.com/game/word-duel" target="_blank">Crazy Games</a>,
                 <a href="https://apps.apple.com/us/app/word-duel-pvp-words-battle/id1538227996" target="_blank">App
                     Store</a>
@@ -164,8 +185,8 @@
         <div class="games">
             <img src="swing.png" class="game-icon" />
             <div class="game-intro">
-                <b>Swing</b>
-                <br />Physics-based Swing game: can you make it to the next
+                <h2>Swing</h2>
+                Physics-based Swing game: can you make it to the next
                 level? Available on
                 <a href="https://www.kaiostech.com/store/apps/?bundle_id=kaios.app.swing" target="_blank">KaiOS</a>
             </div>
@@ -173,8 +194,8 @@
         <div class="games">
             <img src="orbit.png" class="game-icon" />
             <div class="game-intro">
-                <b>Orbit</b>
-                <br />Orbit and avoid obstacles in weekly challenges!
+                <h2>Orbit</h2>
+                Orbit and avoid obstacles in weekly challenges!
                 Available on
                 <a href="https://www.kaiostech.com/store/apps/?bundle_id=kaios.app.orbit" target="_blank">KaiOS</a>
             </div>
@@ -182,8 +203,8 @@
         <div class="games">
             <img src="dash1v1.png" class="game-icon" />
             <div class="game-intro">
-                <b>Dash 1v1</b>
-                <br />It's easy: tap and dash, but can you beat your friends
+                <h2>Dash 1v1</h2>
+                It's easy: tap and dash, but can you beat your friends
                 and players all around the world? Available on
                 <a href="https://www.kaiostech.com/store/apps/?bundle_id=kaios.app.dash1v1" target="_blank">KaiOS</a>
             </div>
